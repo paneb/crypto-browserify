@@ -1,8 +1,7 @@
 // Original code adapted from Robert Kieffer.
 // details at https://github.com/broofa/node-uuid
 (function() {
-  var _global = this;
-
+  var _global = this || window || {};
   var mathRNG, whatwgRNG;
 
   // NOTE: Math.random() does not guarantee "cryptographic quality"
